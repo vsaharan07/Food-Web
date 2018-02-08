@@ -2,16 +2,16 @@
 This web app will help people in making quick judgements on what are the best items to eat in a given restaurant based on ratings
 
 # Project Description
-## MVP
+### MVP
 If a user wants to eat any kind of food, he can search for a list of restaurants that will offer him with that food.
 
-## Add-on Features
+### Add-on Features
 1. Separate accounts for the user and the restaurant owners. 
 2. The restaurant owners will be able to publish their restaurant information.
 3. Users can keep track of the previously searched restaurants.
 4. Ratings and reviews of the dishes and environment of a restaurant.
 
-## How are we going to do it?
+### How are we going to do it?
 •	Designing the front end of the web app using HTML5, CSS3, Bootstrap.
 •	Performing back end development using JavaScript, PHP, MySQL and API’s. 
 
