@@ -23,7 +23,7 @@ Gaurav Avula
 ### What each team member will accomplish before the next meeting
 
 Redwan Ibne Seraj Khan
--Make features of the Home Page.
+-Make features of the Home Page(Navigation Bar).
 
 Ankit Nerlakanti
 -Design the background and style of the home page.
