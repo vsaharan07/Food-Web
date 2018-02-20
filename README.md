@@ -18,7 +18,7 @@ The website will be able to give a list of restaurants that will offer the food 
 - Performing back end development using JavaScript, PHP, MySQL and API’s. 
 
 # User Story
-If a user wants to eat any kind of food, he will be able to go to the website. The user can search for a list of restaurants that will offer him with that food.
+If a user wants to eat any kind of food, he will be able to go to the website. The user can then search for a list of restaurants that will offer him with that food.
 
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FoodEnthusiasts/FoodEnthusiastsChatForum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
