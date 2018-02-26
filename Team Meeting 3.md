@@ -1,4 +1,4 @@
-# Team Meeting 2
+# Team Meeting 3
 
 ### Date and Time: 02/26/18 (3:00 -4:00 pm)
 
@@ -7,10 +7,8 @@
 Everyone present.
 
 ### Brief Summary:
-We talked about how each one of us are going to merge our codes in github so that it does not create bugs and issues while merging. 
-We had a conversation with Jesse about our team meetings and how we can easily use Webstorm to push and commit to github. We also talked
-about how we could avoid not completing any practical objectives for our assigned tasks with Jesse. Finally we talked about what updates we are
-going to ensure for our project in this week.
+
+We talked about how we are going to improve the three parts of our Web page namely - Locations, Ratings and Reviews. 
 
 ### What each team member accomplished since last meeting:
 
