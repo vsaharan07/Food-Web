@@ -14,7 +14,7 @@ We talked about how we are going to set up the Yelp API for completing our MVP. 
 
 Redwan Ibne Seraj Khan
 - Ensured options for logging in from the ratings page
--
+
 Ankit Nerlakanti
 - Worked on how to find the nearest restaurant locations.
 
