@@ -11,11 +11,51 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+     <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="videos/dishesopen.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
 
 
     <style>
+     /* Style the video: 100% width and height to cover the entire window */
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* Add some content at the bottom of the video/page */
+        .content {
+            position: relative;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            /*padding: 20px;*/
+        }
+
+        /* Style the button used to pause/play the video */
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        } 
         .jumbotron{
-            background-image: url(images/bg.jpg);
+            /*background-image: url(images/bg.jpg);*/
             text-align:center;
             margin-top:70px;
         }
@@ -57,6 +97,10 @@
 
         
 
+        #about{
+            margin-top: 3%;
+        }
+
     </style>
     <title>Food Web</title>
 
@@ -94,8 +138,9 @@
 
 </nav>
 
-<div class="jumbotron" id="jumbotron">
-    <h1 class="display-3">Food Web App</h1>
+<div class="jumbotron content" id="jumbotron">
+   
+    <h1 class="display-2">Food Web App</h1>
     <p class="lead">Search for restaurants,ratings and much more!</p>
     <hr class="my-4">
 
@@ -103,13 +148,13 @@
         <div class="form-group">
 
             <div class="input-group">
-                <input  type="text" class="form-control" id="email" placeholder="Type your search here">
+                <input  type="text" class="form-control" id="name" placeholder="Type your search here">
             </div>
         </div>
 
 
 
-        <button type="submit" class="btn btn-primary">Search</button>
+        <input type="button" id="submit" value="Search" class="btn btn-primary">
     </form>
 </div>
 
@@ -176,7 +221,40 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+    
+    $("#submit").click(function(){
+        
+        var search = $("#name").val();
+        window.location = "https://www.yelp.com/search?find_desc="+search;
+      });
+              
+         function updateSearch() {
+              var form = this.toString();
+              document.write(form) ;
 
+          }
+
+</script>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+</script>
 
 
 </body>
