@@ -134,30 +134,13 @@
             <label class="sr-only" for="email">Email Address</label>
 
             <div class="input-group">
-                <input id ="searchButton" type="text" class="form-control" id="email" placeholder="Type your favourite food">
+                <input type="text" class="form-control" id="name" placeholder="Type your favourite food">
             </div>
         </div>
 
 
-        <button type="submit" class="btn btn-primary">Search</button>
+        <input type="button" id="submit" value="Search" class="btn btn-primary">
     </form>
-</div>
-<div class="container">
-
-    <div class="col" id="summary">
-
-        <h1> Here are the best rated restaurants for pizza.</h1>
-        <ul>
-            <li><h3><a href="http://www.pizzaplant.com/" target="_blank">Pizza Plant</em></a></h3></li>
-            <li><h3><a href="http://santorasphase.restaurantwebexpert.com/" target="_blank">Santora's Pizza Pub and Grill</em></a></h3></li>
-            <li><h3><a href="https://www.lanovawings.com/" target="_blank">La Nova Wings Inc</em></a></h3></li>
-            <li><h3><a href="https://www.joesnewyorkstylepizza.com/" target="_blank">Joe's New York Style Pizza</em></a></h3></li>
-            <li><h3><a href="http://www.imperialpizzabuffalo.com/" target="_blank">Imperial Pizza</em></a></h3></li>
-        </ul>
-
-
-    </div>
-</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -166,20 +149,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 <script type="text/javascript">
     
+    
     $("#submit").click(function(){
         
+        
         var search = $("#name").val();
-        window.location = "https://www.yelp.com/search?find_desc="+search;
+        
+        window.open("https://www.yelp.com/search?find_desc="+search+"+&sortby=rating&start=0");
       });
-              
+             
          function updateSearch() {
               var form = this.toString();
               document.write(form) ;
 
           }
 
-</script>
-<script>
 // Get the video
 var video = document.getElementById("myVideo");
 

@@ -173,7 +173,7 @@
         <div class="card">
             <a href="#"> <img class="card-img-top" id="locationImage" src="images/map.jpg" alt="Card image cap"></a>
             <div class="card-body">
-                <a href= "#" >
+                <a href= "location.php" >
                 <h4 class="card-title"><i class="fa fa-map-marker" aria-hidden="true"></i>
                     Location</a></h4>
                 <p class="card-text">Gives you search results according to your location.</p>
@@ -183,7 +183,7 @@
         <div class="card">
             <a href = "ratings.html"><img class="card-img-top" src="images/ratingstar.jpg" alt="Card image cap"></a>
             <div class="card-body">
-                <a href = "ratings.html">
+                <a href = "ratings.php">
                     <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Ratings</h4>
                 </a>
                     <p class="card-text">Sorts the search results according to the ratings.</p>
@@ -194,7 +194,7 @@
         <div class="card">
             <a href="review.html">  <img class="card-img-top" src="images/review.jpg" alt="Card image cap" ></a>
             <div class="card-body">
-                <a href="review.html">
+                <a href="review.php">
                     <h4 class="card-title"><i class="fa fa-sticky-note" aria-hidden="true"></i>
                     Write a Review</h4>
                 </a>
@@ -226,7 +226,7 @@
     $("#submit").click(function(){
         
         var search = $("#name").val();
-        window.location = "https://www.yelp.com/search?find_desc="+search;
+        window.open("https://www.yelp.com/search?find_desc="+search);
       });
               
          function updateSearch() {
