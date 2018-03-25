@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,16 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-     <!-- The video -->
-    <video autoplay muted loop id="myVideo">
-      <source src="videos/dishesopen.mp4" type="video/mp4">
-    </video>
-
-    <!-- Optional: some overlay text to describe the video -->
-
+<video autoplay muted loop id="myVideo">
+  <source src="videos/dishesrating.mp4" type="video/mp4">
+</video>
 
     <style>
-     /* Style the video: 100% width and height to cover the entire window */
+    /* Style the video: 100% width and height to cover the entire window */
         #myVideo {
             position: fixed;
             right: 0;
@@ -90,35 +83,28 @@
         .navbar{
             width: 100%;
         }
-
-        #locationImage{
-          width: 100%;
-        }
-
-        
-
-        #about{
-            margin-top: 3%;
+        .content {
+           /* background-image:url(images/ratingback.jpg);*/
         }
 
     </style>
-    <title>Food Web</title>
-
+    <title>Ratings</title>
 
 </head>
-
-<body data-spy="scroll" data-target="#navbar" data-offset="150">
-
-
+<body>
 <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
 
-    <a class="navbar-brand" href="#">Food Web</a>
+    <a class="navbar-brand" href="index.html">Food Web</a>
     <ul class="nav navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="#jumbotron">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#jumbotron">About<span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="review.html">Review<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#jumbotron">Food Blog<span class="sr-only">(current)</span></a>
@@ -130,114 +116,54 @@
         </li>
     </ul>
     <form class="form-inline pull-xs-right">
-        <input class="form-control" type="email" placeholder="Email">
-        <input class="form-control" type="password" placeholder="Password">
-        <button class="btn btn-primary" type="submit" href = '#'>Login</button>
-        <button class="btn btn-primary" type="submit" href = '#'>Sign Up</button>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
+
     </form>
 
-</nav>
 
+</nav>
+<div class = content >
 <div class="jumbotron content" id="jumbotron">
-   
-    <h1 class="display-2">Food Web App</h1>
-    <p class="lead">Search for restaurants,ratings and much more!</p>
+    <h1 class="display-1">Restaurant Ratings</h1>
+    <p class="lead">Your Cravings are meant to be satisfied! Have a look at who's offering the best in town!</p>
     <hr class="my-4">
 
     <form class="form-inline">
         <div class="form-group">
+            <label class="sr-only" for="email">Email Address</label>
 
             <div class="input-group">
-                <input  type="text" class="form-control" id="name" placeholder="Type your search here">
+                <input type="text" class="form-control" id="name" placeholder="Type your favourite food">
             </div>
         </div>
-
 
 
         <input type="button" id="submit" value="Search" class="btn btn-primary">
     </form>
 </div>
-
-<div class="container">
-
-    <div class="row" id="summary">
-
-        <h1> Why should I use this app?</h1>
-        <p class="lead"> To know more about restaurants!</p>
-
-
-    </div>
-</div>
-<div class="container" id="about">
-    <div class="card-deck" >
-        <div class="card">
-            <a href="#"> <img class="card-img-top" id="locationImage" src="images/map.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-                <a href= "location.php" >
-                <h4 class="card-title"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                    Location</a></h4>
-                <p class="card-text">Gives you search results according to your location.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <a href = "ratings.html"><img class="card-img-top" src="images/ratingstar.jpg" alt="Card image cap"></a>
-            <div class="card-body">
-                <a href = "ratings.php">
-                    <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Ratings</h4>
-                </a>
-                    <p class="card-text">Sorts the search results according to the ratings.</p>
-
-
-            </div>
-        </div>
-        <div class="card">
-            <a href="review.html">  <img class="card-img-top" src="images/review.jpg" alt="Card image cap" ></a>
-            <div class="card-body">
-                <a href="review.php">
-                    <h4 class="card-title"><i class="fa fa-sticky-note" aria-hidden="true"></i>
-                    Write a Review</h4>
-                </a>
-
-                    <p class="card-text">Give ratings and add reviews about your experience</p>
-
-            </div>
-        </div>
-    </div>
-</div>
-<div  id="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true" ></i> Food Web. All rights reserved.</p>
-</div>
-
-
-
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://use.fontawesome.com/3186f7a244.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-
 <script type="text/javascript">
+    
     
     $("#submit").click(function(){
         
+        
         var search = $("#name").val();
-        window.open("https://www.yelp.com/search?find_desc="+search);
+        
+        window.open("https://www.yelp.com/search?find_desc="+search+"+&sortby=rating&start=0");
       });
-              
+             
          function updateSearch() {
               var form = this.toString();
               document.write(form) ;
 
           }
 
-</script>
-
-<script>
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -255,8 +181,5 @@ function myFunction() {
     }
 }
 </script>
-
-
 </body>
-
 </html>
