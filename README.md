@@ -22,13 +22,13 @@ The website will be able to give a list of restaurants that will offer the food 
 
 ### How are we going to do it?
 - Designing the front end of the web app using HTML5, CSS3, Bootstrap.
-- Performing back end development using JavaScript, Nodejs and MongoDB. 
+- Performing back end development using JavaScript, Nodejs, MongoDB and API's. 
 
 # User Story
 If a user wants to eat any kind of food, he will be able to go to the website. The user can then search for a list of restaurants that will offer him with that food.
 
 # Youtube Link Demonstration
-https://www.youtube.com/watch?v=SkWCeSsA8NY&feature=youtu.be
+https://youtu.be/6CfGHV5rmPE
 
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FoodEnthusiasts/FoodEnthusiastsChatForum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
