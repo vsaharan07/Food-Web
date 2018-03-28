@@ -2,23 +2,13 @@
 This web app will help people in making quick judgements on what are the best items to eat in a given restaurant based on ratings
 
 # How to Run the website
-The site is currently hosted with UB's Server. Just go to http://www.acsu.buffalo.edu/~rikhan/# to use the website.
+Just go to https://murmuring-caverns-44957.herokuapp.com/ to use the website. As simple as that! You cannot run it as a localhost because we are using our own database for alpha release and as result it won't work as a localhost.
 
-If you want to use the site as a localhost, follow the steps below.
-
-1. Click the green 'Clone or Download' button in the repository.
-2. Click 'Download as Zip'
-3. Find the folder to which you have downloaded the zip file.
-4. Unzip and extract the contents of the zipped file. You can use '7zip' software to do that.
-    For Windows:
-    http://www.7-zip.org/
-    For linux:
-    https://www.howtoforge.com/tutorial/how-to-install-and-use-7zip-file-archiver-on-ubuntu-linux/#download-and-installation-of-zip
-5. Go to the extracted folder. 
-6. Right Click on index.html and select open with Chrome/Firefox/Safari.
 
 # Project Description
-If you are hungry and want to spend your money on something worthy, then you must check our app, which provides the ratings and feedback of a dish at any restaurant near you. This app will help you satisfy your appetite with food that is worth your time and money. Just go to our site, search what you want to eat in the search bar and get our list of suggestions to satisfy your cravings. Feel free to contribute and share your experience. 
+If you are hungry and want to spend your money on something worthy, then you must check our app, which provides the ratings and feedback of a dish at any restaurant near you. This app will help you satisfy your appetite with food that is worth your time and money. Just go to our site, search what you want to eat in the search bar and get our list of suggestions to satisfy your cravings. 
+Individual users can also make home made foods and try to start a business by posting foods and the location to collect them in our site. We have focus to help the immigrants and other foreign citizens who are trying to earn but cannot just only because they are not well versed in English. We feel that if they can cook foods of their own country and make it popular here in the USA. In that way they will be able to become self sufficient. Feel free to contribute and share your experience. 
+
 
 ### MVP
 The website will be able to give a list of restaurants that will offer the food searched for.
@@ -31,13 +21,13 @@ The website will be able to give a list of restaurants that will offer the food 
 
 ### How are we going to do it?
 - Designing the front end of the web app using HTML5, CSS3, Bootstrap.
-- Performing back end development using JavaScript, PHP, MySQL and API’s. 
+- Performing back end development using JavaScript, Nodejs and MongoDB. 
 
 # User Story
 If a user wants to eat any kind of food, he will be able to go to the website. The user can then search for a list of restaurants that will offer him with that food.
 
 # Youtube Link Demonstration
-https://youtu.be/GdX4rm_Z_Ww
+https://www.youtube.com/watch?v=SkWCeSsA8NY&feature=youtu.be
 
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FoodEnthusiasts/FoodEnthusiastsChatForum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
