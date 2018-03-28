@@ -7,6 +7,7 @@ Just go to https://murmuring-caverns-44957.herokuapp.com/ to use the website. As
 
 # Project Description
 If you are hungry and want to spend your money on something worthy, then you must check our app, which provides the ratings and feedback of a dish at any restaurant near you. This app will help you satisfy your appetite with food that is worth your time and money. Just go to our site, search what you want to eat in the search bar and get our list of suggestions to satisfy your cravings. 
+
 Individual users can also make home made foods and try to start a business by posting foods and the location to collect them in our site. We have focus to help the immigrants and other foreign citizens who are trying to earn but cannot just only because they are not well versed in English. We feel that if they can cook foods of their own country and make it popular here in the USA. In that way they will be able to become self sufficient. Feel free to contribute and share your experience. 
 
 
