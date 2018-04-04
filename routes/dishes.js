@@ -43,6 +43,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
   var image = req.body.image;
   var price= req.body.price;
   var desc = req.body.description;
+  var rest=req.body.restaurant;
   var author = {
       id: req.user._id,
       username: req.user.username
@@ -56,7 +57,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
      var lat = data[0].latitude;
      var lng = data[0].longitude;
      var location = data[0].formattedAddress;
-    var newDish = {name: name, price:price,image: image, description: desc, author:author,location: location, lat: lat, lng: lng};
+    var newDish = {name: name, price:price,image: image, description: desc,restaurant: rest, author:author,location: location, lat: lat, lng: lng};
     // Create a new dish and save to DB
     Dish.create(newDish, function(err, newlyCreated){
         if(err){
@@ -108,7 +109,7 @@ router.put("/:id", middleware.checkDishOwnership, function(req, res){
      var lat = data[0].latitude;
      var lng = data[0].longitude;
      var location = data[0].formattedAddress;
-     var newData = {name: req.body.name, image: req.body.image, price:req.body.price, description: req.body.description, location: location, lat: lat, lng: lng};
+     var newData = {name: req.body.name, image: req.body.image, price:req.body.price, description: req.body.description, restaurant:req.body.restaurant,location: location, lat: lat, lng: lng};
     Dish.findByIdAndUpdate(req.params.id, newData, function(err, dish){
         if(err){
             req.flash("error", err.message);

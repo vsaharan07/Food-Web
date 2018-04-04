@@ -16,6 +16,7 @@
           Ratings: <%= dish.price %>/5
         </h4>
         <h4><a><%=dish.name%></a></h4>
+        <p>Restaurant Name:<%= dish.restaurant%></p>
         <p><%= dish.description %></p>
         <p>
           <em>Submitted by: <%= dish.author.username %>, <%= moment(dish.createdAt).fromNow() %></em>
@@ -83,6 +84,6 @@
     });
   }
  </script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-TTK5nQppVilIJS1fD6IUYRCkonyKubc&callback=initMap"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIWIuVtNu7Y5oxMRvaBj6IQ-T5agL5TyQ&callback=initMap"></script>
 
 <% include ../partials/footer %> 
