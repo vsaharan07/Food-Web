@@ -2,7 +2,7 @@
 This web app will help people in making quick judgements on what are the best items to eat in a given restaurant based on ratings
 
 # How to Run the website
-Just go to https://webdevbootcamp-ankitner.c9users.io/dishes to use the website. As simple as that! You cannot run it as a localhost because we are using our own database for alpha release and as result it won't work as a localhost. The site might be busy, just have patience and try it after some time again if you face any issues.
+Just go to https://webdevbootcamp-ankitner.c9users.io to use the website. As simple as that! You cannot run it as a localhost because we are using our own database for alpha release and as result it won't work as a localhost. The site might be busy, just have patience and try it after some time again if you face any issues.
 
 
 # Project Description
