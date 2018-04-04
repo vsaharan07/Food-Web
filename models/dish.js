@@ -7,6 +7,7 @@ var dishSchema = new mongoose.Schema({
    price: Number,
    image: String,
    description: String,
+   restaurant:String,
    location:String,
    lat:Number,
    lng:Number,
